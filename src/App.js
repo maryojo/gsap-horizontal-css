@@ -20,8 +20,8 @@ export default function App() {
           pin: true,
           scrub: 1,
           snap: 1 / (panels.length - 1),
-          end: () => "+=" + slider.current.offsetWidth
-        }
+          end: () => "+=" + slider.current.offsetWidth,
+        },
       });
     }, component);
     return () => ctx.revert();
@@ -42,9 +42,9 @@ export default function App() {
             </div>
           </div>
         </div>
-        <div className="panel red">ONE</div>
+        <div className="panel bg-gray-500">ONE</div>
         <div className="panel orange">TWO</div>
-        <div className="panel purple">THREE</div>
+        <div className="panel bg-green-500">THREE</div>
       </div>
       <div className="lastContainer">Last Container</div>
     </div>

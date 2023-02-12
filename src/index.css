@@ -1,8 +1,8 @@
-/* @tailwind base;
+@tailwind base;
 @tailwind components;
-@tailwind utilities; */
+@tailwind utilities;
 
-
+@layer base {
   html {
     overflow-y: scroll;
     height: 100%;
@@ -18,15 +18,16 @@
   body {
     margin: 0;
   }
+}
 
-
+@layer components {
   .container {
     width: 400vw;
     height: 100vh;
     display: flex;
     flex-wrap: wrap;
   }
-  
+
   .firstContainer {
     display: flex;
     flex-direction: column;
@@ -35,19 +36,16 @@
     height: 100vh;
     background: yellow;
   }
-  
+
   .lastContainer {
     display: flex;
     height: 100vh;
     background: yellow;
   }
-  
+
   .panel {
     width: 100vw;
     height: 100vh;
-  }
-  .red {
-    background: blue;
   }
   .red {
     background: red;
@@ -61,4 +59,4 @@
   .blue {
     background-color: blue;
   }
-
+}
